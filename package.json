@@ -29,7 +29,8 @@
     "lodash.throttle": "^4.1.1",
     "node-hid": "^0.7.3",
     "object-hash": "^1.1.8",
-    "text2png": "^2.1.0"
+    "text2png": "^2.1.0",
+    "glob": "^7.1.2"
   },
   "devDependencies": {
     "eslint": "^5.2.0"
