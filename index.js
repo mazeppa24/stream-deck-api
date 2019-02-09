@@ -1,3 +1,5 @@
+'use strict'
+
 const streamDeckApi = require('./lib/stream-deck-api')
 
 let streamDeck = streamDeckApi.getStreamDeck()
@@ -5,11 +7,11 @@ streamDeck.reset()
 
 
 streamDeck.drawText('TCN', 'black', 'white',1);
-streamDeck.drawText('AP', 'black','white',2);
-streamDeck.drawText('HSEL', 'black','white',3);
-streamDeck.drawText(':HSEL', 'black','white',4);
+streamDeck.drawText('AP', 'black','green',2);
+streamDeck.drawText('HSEL', 'black','yellow',3);
+streamDeck.drawText(':HSEL', 'black','pink',4);
 
-streamDeck.drawText('12', 'black','white',5);
+streamDeck.drawText('12', 'black','orange',5);
 
 streamDeck.drawText('TCN', 'white', 'black',6);
 streamDeck.drawText('LP', 'white','black',7);
@@ -22,8 +24,8 @@ streamDeck.drawText('23:30', 'white','black',10);
 
 streamDeck.drawText('TCN', 'green', 'black',11);
 streamDeck.drawText('LP', 'green','black',12);
-streamDeck.drawText('HSEL', 'green','black',13);
-streamDeck.drawText(':HSEL', 'green','black',14);
+streamDeck.drawText('HSEL', 'red','black',13);
+streamDeck.drawText(':HSEL', 'blue','black',14);
 
 streamDeck.drawText('A', 'green','black',15);
 

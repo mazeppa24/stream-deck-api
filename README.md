@@ -1,13 +1,6 @@
 # Stream Deck API
-Stream Deck API is a library that allows you to interact with an Elgato Stream Deck controller.
 
-### NOTE: API is not stable and will not follow semver until version >=1.0.0. If you need a specific version, hard-lock it to an exact version for now (in `package.json`):
-
-```json
-"dependencies": {
-  "stream-deck-api": "0.0.4"
-}
-```
+Forked from: https://github.com/danieltian/stream-deck-api.git Many thanks!
 
 ## Examples
 
@@ -54,7 +47,7 @@ if (buttonState.8 == 1) { console.log('button 8 pressed') };
 if (buttonState.8 == 0) { console.log('button 8 released') };
 ```
 
-### Draw Image or Color to Button
+### Draw Image, Text or Color to a Button
 
 ```js
 const streamDeckDeckApi = require('stream-deck-api');
@@ -81,13 +74,22 @@ streamDeck.drawColor(0xFF0000, buttonNumber); // red
 streamDeck.drawColor(0x00FF00, buttonNumber); // green
 streamDeck.drawColor(0x0000FF, buttonNumber); // blue
 streamDeck.drawColor(0xFFFFFF, buttonNumber); // white
+
+// ----------------------------------------------
+// Draw text with color, background color
+// ----------------------------------------------
+streamDeck.drawText('HI', 'green', 'black', buttonNumber);
+streamDeck.drawText('12:34', 'white', 'black', buttonNumber);
+streamDeck.drawText('SAFE', 'black', 'white', buttonNumber);
+
+
+// ----------------------------------------------
+// Draw text over image //EXPERIMENTAL
+// ----------------------------------------------
+streamDeck.drawTextOverImage('HI', 'green', './images/blank.png', buttonNumber);
 ```
 
-## API
-##### TODO: Write API docs
-
 ## Caching
-##### TODO: Clean this up
 Quick and dirty explanation: Because it takes a non-trivial amount of time to process an image (reading it from disk and resizing it) and to create the data that gets sent to the Stream Deck, caching has been implemented in order to speed up this process.
 
 You won't see the caching/non-caching effects if you draw to only one button; it's too quick to notice. However, if you draw to all 15 buttons at once, you'll notice that without caching (for example, the first time you draw to all the buttons), there will be a ripple effect as the buttons draw one after another. With caching enabled (currently forced and no way to disable), they will be drawn instantly.
