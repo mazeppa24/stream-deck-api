@@ -4,11 +4,11 @@ let streamDeck = streamDeckApi.getStreamDeck()
 streamDeck.reset()
 
 
-streamDeck.drawText('TCN ', 'green', 'black',1 , 200);
-streamDeck.drawText(':TCN ', 'green','black', 2, 200);
+streamDeck.drawText('TCN ', 'green', 1,'black');
+streamDeck.drawText(':TCN ', 'green',2,'black');
 
-streamDeck.drawText('HSEL', 'green','black', 6, 200);
-streamDeck.drawText(':HSEL', 'green','black', 7, 200);
+streamDeck.drawText('HSEL', 'green',3,'black');
+streamDeck.drawText(':HSEL', 'green',4,'black');
 
 /*
 streamDeck.drawTextFile('lakalala', 2);
