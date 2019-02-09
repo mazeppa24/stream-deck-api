@@ -4,11 +4,21 @@ let streamDeck = streamDeckApi.getStreamDeck()
 streamDeck.reset()
 
 
-streamDeck.drawText('TCN ', 'green', 1,'black');
+streamDeck.drawText('TCN ', 'white', 1,'black');
 streamDeck.drawText(':TCN ', 'green',2,'black');
 
 streamDeck.drawText('HSEL', 'green',3,'black');
 streamDeck.drawText(':HSEL', 'green',4,'black');
+
+streamDeck.drawText('TCN', 'white',6,'black');
+streamDeck.drawText('AP', 'white',7,'black');
+
+
+streamDeck.drawText('UFC', 'black',8,'white');
+streamDeck.drawText('AP', 'black',9,'white');
+
+
+streamDeck.drawText('TCN', 'white',11,'black');
 
 /*
 streamDeck.drawTextFile('lakalala', 2);
