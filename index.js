@@ -4,28 +4,28 @@ let streamDeck = streamDeckApi.getStreamDeck()
 streamDeck.reset()
 
 
-streamDeck.drawText('TCN', 'black', 1,'white');
-streamDeck.drawText('AP', 'black',2,'white');
-streamDeck.drawText('HSEL', 'black',3,'white');
-streamDeck.drawText(':HSEL', 'black',4,'white');
+streamDeck.drawText('TCN', 'black', 'white',1);
+streamDeck.drawText('AP', 'black','white',2);
+streamDeck.drawText('HSEL', 'black','white',3);
+streamDeck.drawText(':HSEL', 'black','white',4);
 
-streamDeck.drawText('12', 'black',5,'white');
+streamDeck.drawText('12', 'black','white',5);
 
-streamDeck.drawText('TCN', 'white', 6,'black');
-streamDeck.drawText('LP', 'white',7,'black');
-streamDeck.drawText('HSEL', 'white',8,'black');
-streamDeck.drawText(':HSEL', 'white',9,'black');
+streamDeck.drawText('TCN', 'white', 'black',6);
+streamDeck.drawText('LP', 'white','black',7);
+streamDeck.drawText('HSEL', 'white','black',8);
+streamDeck.drawText(':HSEL', 'white','black',9);
 
-streamDeck.drawText('23:30', 'white',10,'black');
+streamDeck.drawText('23:30', 'white','black',10);
 
 
 
-streamDeck.drawText('TCN', 'green', 11,'black');
-streamDeck.drawText('LP', 'green',12,'black');
-streamDeck.drawText('HSEL', 'green',13,'black');
-streamDeck.drawText(':HSEL', 'green',14,'black');
+streamDeck.drawText('TCN', 'green', 'black',11);
+streamDeck.drawText('LP', 'green','black',12);
+streamDeck.drawText('HSEL', 'green','black',13);
+streamDeck.drawText(':HSEL', 'green','black',14);
 
-streamDeck.drawText('A', 'green',15,'black');
+streamDeck.drawText('A', 'green','black',15);
 
 /*
 streamDeck.drawTextFile('lakalala', 2);
