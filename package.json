@@ -18,11 +18,11 @@
     "start": "node index.js",
     "lint": "eslint ."
   },
-  "author": "Daniel Tian <dftian@gmail.com>",
+  "author": "mazeppa<mazeppa@nym.hush.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:danieltian/stream-deck-api.git"
+    "url": "git@github.com:mazeppashorse/stream-deck-api.git"
   },
   "dependencies": {
     "jimp": "^0.2.28",
